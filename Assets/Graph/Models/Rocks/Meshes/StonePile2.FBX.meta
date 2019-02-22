@@ -7,22 +7,33 @@ ModelImporter:
     100002: PileOfStone02_LOD1
     100004: PileOfStone02_LOD2
     100006: //RootNode
+    100008: PileOfStone02_Collider
+    100010: PileOfStone_Collider
     400000: PileOfStone02_LOD0
     400002: PileOfStone02_LOD1
     400004: PileOfStone02_LOD2
     400006: //RootNode
+    400008: PileOfStone02_Collider
+    400010: PileOfStone_Collider
     2100000: stonePile2_LOD0
     2100002: stonePile2_LOD1
     2100004: stonePile2_LOD2
+    2100006: No Name
     2300000: PileOfStone02_LOD0
     2300002: PileOfStone02_LOD1
     2300004: PileOfStone02_LOD2
+    2300006: PileOfStone02_Collider
+    2300008: PileOfStone_Collider
     3300000: PileOfStone02_LOD0
     3300002: PileOfStone02_LOD1
     3300004: PileOfStone02_LOD2
+    3300006: PileOfStone02_Collider
+    3300008: PileOfStone_Collider
     4300000: PileOfStone02_LOD0
     4300002: PileOfStone02_LOD1
     4300004: PileOfStone02_LOD2
+    4300006: PileOfStone02_Collider
+    4300008: PileOfStone_Collider
     7400000: Take 001
     9500000: //RootNode
     20500000: //RootNode

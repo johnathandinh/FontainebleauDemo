@@ -78,7 +78,9 @@ float GetOcclusion(float2 screenPos, float depth, float radius, float ratio)
 		pos.y = 1 - pos.y;
 		if (pos.x >= 0 && pos.x <= 1 && pos.y >= 0 && pos.y <= 1)
 		{
-			float sampledDepth = LinearEyeDepth(SAMPLE_TEXTURE2D_LOD(_CameraDepthTexture, sampler_CameraDepthTexture, pos, 0).r, _ZBufferParams);
+			//float sampledDepth = LinearEyeDepth(SAMPLE_TEXTURE2D_LOD(_CameraDepthTexture, sampler_CameraDepthTexture, pos, 0).r, _ZBufferParams);
+			float sampledDepth = LinearEyeDepth(SampleCameraDepth(pos), _ZBufferParams);
+			
 			if (sampledDepth >= depth)
 				contrib += sample_Contrib;
 		}
