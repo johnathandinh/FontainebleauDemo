@@ -33,12 +33,15 @@ namespace Polybrush
 
 		void Start()
 		{
-			SetAdditionalVertexStreamsMesh(m_AdditionalVertexStreamMesh);
+            if ( m_AdditionalVertexStreamMesh != null)
+                SetAdditionalVertexStreamsMesh(m_AdditionalVertexStreamMesh);
 		}
 
 		public void SetAdditionalVertexStreamsMesh(Mesh mesh)
 		{
-			this.m_AdditionalVertexStreamMesh = mesh;
+            var originalMesh = gameObject.GetComponent<MeshFilter>().sharedMesh;
+            mesh.normals = originalMesh.normals;
+            this.m_AdditionalVertexStreamMesh = mesh;
 			meshRenderer.additionalVertexStreams = mesh;
 		}
 
